@@ -10,7 +10,7 @@ typedef struct Node {
     size_t sizeofData;	// Размер данных в узле
 } Node;
 
-// Связный списка
+// Связный список
 typedef struct LinkedList {
     Node *head;		// Указатель на первый узел
     size_t data_size;	// Размер данных в узле
