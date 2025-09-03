@@ -9,7 +9,7 @@ typedef int (*CompareFunc)(const void*, const void*);
 // Функция линейного поиска
 void* linear_search(void* array, size_t element_size, size_t length, const void* target, CompareFunc compare) {
 
- if(!array  !compare)
+ if(!array || !compare)
   return NULL;
     for (size_t i = 0; i < length; i++) {
         void* current_element = (char*)array + i * element_size;
